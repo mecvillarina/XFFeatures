@@ -8,10 +8,8 @@
         <CollectionView ItemsSource="{Binding Users}">
             <CollectionView.ItemsLayout>
                 <!--<LinearItemsLayout Orientation="Vertical" />-->
-
                 <GridItemsLayout Orientation="Horizontal"
                                  Span="2" />
-
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -31,6 +29,16 @@
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
+
+            <CollectionView.EmptyView>
+                <StackLayout>
+                    <Label FontSize="18"
+                           HorizontalTextAlignment="Center"
+                           Text="Nobody here"
+                           VerticalTextAlignment="Center" />
+
+                </StackLayout>
+            </CollectionView.EmptyView>
         </CollectionView>
     </Grid>
 </ContentPage>

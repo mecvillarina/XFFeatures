@@ -17,8 +17,8 @@
                 Text="Label (4.3)" />
 
         <Button Command="{Binding NavigateToCommand}"
-                CommandParameter="CarouselViewPage"
-                Text="Carousel View (4.3 P)" />
+                CommandParameter="SwipeViewPage"
+                Text="SwipeView (4.4 P)" />
     </StackLayout>
 
 </ContentPage>

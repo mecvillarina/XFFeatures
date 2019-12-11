@@ -33,6 +33,7 @@ namespace XFFeatures
             containerRegistry.RegisterForNavigation<CollectionViewPage, CollectionViewPageViewModel>();
             containerRegistry.RegisterForNavigation<RefreshViewPage, RefreshViewPageViewModel>();
             containerRegistry.RegisterForNavigation<LabelPage, LabelPageViewModel>();
+            containerRegistry.RegisterForNavigation<SwipeViewPage, SwipeViewPageViewModel>();
         }
     }
 }

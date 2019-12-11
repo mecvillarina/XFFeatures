@@ -11,6 +11,7 @@ namespace XFFeatures.ViewModels
     {
         public LabelPageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = "Label";
         }
 
         private string _htmlValue;

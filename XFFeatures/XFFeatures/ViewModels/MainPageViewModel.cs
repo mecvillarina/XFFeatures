@@ -14,7 +14,7 @@ namespace XFFeatures.ViewModels
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Features";
 
             NavigateToCommand = new DelegateCommand<string>(async (viewName) => await OnNavigateToCommand(viewName));
         }

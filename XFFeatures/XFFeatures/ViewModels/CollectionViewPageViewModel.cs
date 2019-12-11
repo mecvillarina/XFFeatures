@@ -14,6 +14,7 @@ namespace XFFeatures.ViewModels
     {
         public CollectionViewPageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = "Collection View";
         }
 
         private ObservableCollection<PersonItemModel> _users;
@@ -28,16 +29,16 @@ namespace XFFeatures.ViewModels
             base.OnNavigatedTo(parameters);
 
             Users = new ObservableCollection<PersonItemModel>();
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Red });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Blue });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Green });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Yellow });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Pink });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.AliceBlue });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Bisque});
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Black });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Cyan });
-            //Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Crimson });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Red });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Blue });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Green });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Yellow });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Pink });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.AliceBlue });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Bisque });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Black });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Cyan });
+            Users.Add(new PersonItemModel() { FirstName = "Juan", LastName = "Dela Cruz", PersonColor = Color.Crimson });
         }
     }
 }

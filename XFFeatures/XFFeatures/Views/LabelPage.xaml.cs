@@ -2,7 +2,7 @@
 
 namespace XFFeatures.Views
 {
-    public partial class LabelPage : NavigationPage
+    public partial class LabelPage : ContentPage
     {
         public LabelPage()
         {

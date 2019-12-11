@@ -22,6 +22,9 @@ namespace XFFeatures.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental");
+
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XFFeatures.Views.NewFeaturesPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             Title="{Binding Title}"
+             prism:ViewModelLocator.AutowireViewModel="True">
+    <StackLayout Spacing="10">
+
+        <!--  SwipeView  -->
+        <StackLayout Spacing="5">
+
+            <Label Margin="20,20,20,0"
+                   FontAttributes="Bold"
+                   Text="SwipeView Control" />
+
+            <SwipeView Padding="20">
+                <SwipeView.LeftItems>
+                    <SwipeItem BackgroundColor="Orange"
+                               Command="{Binding UpdateCommand}"
+                               Text="Update" />
+                </SwipeView.LeftItems>
+                <SwipeView.RightItems>
+                    <SwipeItem BackgroundColor="Red"
+                               Command="{Binding DeleteCommand}"
+                               Text="Delete" />
+                </SwipeView.RightItems>
+
+                <SwipeView.Content>
+                    <StackLayout Padding="20,0">
+                        <Label Text="Swipe to the Left to update" />
+                        <Label Text="Swipe to the Right to delete" />
+                    </StackLayout>
+                </SwipeView.Content>
+            </SwipeView>
+
+            <BoxView BackgroundColor="Gray"
+                     HeightRequest="1" />
+        </StackLayout>
+
+        <!--  GIF Animations  -->
+
+        <StackLayout Spacing="5">
+            <Label Margin="20,0"
+                   FontAttributes="Bold"
+                   Text="GIF Animations" />
+
+            <Image IsAnimationPlaying="True"
+                   Source="gif_awesome.gif" />
+
+            <BoxView BackgroundColor="Gray"
+                     HeightRequest="1" />
+        </StackLayout>
+
+        <!--  CarouselView IndicatorView  -->
+
+        <StackLayout Spacing="5">
+            <Label Margin="20,0"
+                   FontAttributes="Bold"
+                   Text="Indicator View" />
+
+            <CarouselView x:Name="cv">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>IMG_0191.jpeg</x:String>
+                        <x:String>IMG_0192.jpeg</x:String>
+                        <x:String>IMG_0193.jpeg</x:String>
+                        <x:String>IMG_0194.jpeg</x:String>
+                        <x:String>IMG_0195.jpeg</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding .}" />
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <IndicatorView HorizontalOptions="Center"
+                           IndicatorColor="LightGray"
+                           IndicatorSize="10"
+                           IndicatorView.ItemsSourceBy="cv"
+                           SelectedIndicatorColor="Black" />
+
+            <BoxView BackgroundColor="Gray"
+                     HeightRequest="1" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

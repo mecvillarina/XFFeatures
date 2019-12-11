@@ -10,6 +10,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\NewFeaturesPage.xaml.cs">
+      <DependentUpon>NewFeaturesPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Views\CollectionViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -19,7 +25,7 @@
     <EmbeddedResource Update="Views\RefreshViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SwipeViewPage.xaml">
+    <EmbeddedResource Update="Views\NewFeaturesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -16,7 +16,8 @@ namespace XFFeatures.Droid
 
             base.OnCreate(bundle);
 
-            Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental");
+            global::Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental",
+                 "IndicatorView_Experimental");
             global::Xamarin.Forms.Forms.Init(this, bundle);
             
             LoadApplication(new App(new AndroidInitializer()));

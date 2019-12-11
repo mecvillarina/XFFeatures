@@ -2,9 +2,9 @@
 
 namespace XFFeatures.Views
 {
-    public partial class SwipeViewPage : ContentPage
+    public partial class NewFeaturesPage : ContentPage
     {
-        public SwipeViewPage()
+        public NewFeaturesPage()
         {
             InitializeComponent();
         }

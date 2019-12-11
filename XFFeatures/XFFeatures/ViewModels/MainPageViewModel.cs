@@ -23,7 +23,7 @@ namespace XFFeatures.ViewModels
 
         private async Task OnNavigateToCommand(string viewName)
         {
-            await NavigationService.NavigateAsync(viewName);
+            var result = await NavigationService.NavigateAsync(viewName);
         }
     }
 }

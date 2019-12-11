@@ -17,8 +17,8 @@
                 Text="Label (4.3)" />
 
         <Button Command="{Binding NavigateToCommand}"
-                CommandParameter="SwipeViewPage"
-                Text="SwipeView (4.4 P)" />
+                CommandParameter="NewFeaturesPage"
+                Text="New Features (4.4 P)"  />
     </StackLayout>
 
 </ContentPage>
